@@ -30,7 +30,7 @@ function displayBookmarksList(){
         <td >${bookmarksList[i].name}</td>
        
         <td >
-        <button  class="btn-primary mx-2 bg-info rounded border-0 text-white" ><a rel="noopener" href="${bookmarksList[i].url}" target="_blank">Visit</a></button>
+        <button  class="btn-primary mx-2 bg-info rounded border-0 text-white" onclick="openUrl(${i})">Visit</button>
         </td>
         <td>
         <button  class="btn-primary mx-2 bg-danger rounded border-0 text-white" onclick="deleteBookmark(${i})">delete</button>
@@ -42,6 +42,9 @@ function displayBookmarksList(){
 function deleteBookmark( ind){
     bookmarksList.splice(ind,1);
     displayBookmarksList();
+}
+function openUrl(urlid){
+    window.open(bookmarksList[urlid].siteurl, "_blank");
 }
 function alertClose(){
    document.getElementById('sitealert').style='display:non !important';
