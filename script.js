@@ -30,7 +30,7 @@ function displayBookmarksList(){
         <td >${bookmarksList[i].name}</td>
        
         <td >
-        <button  class="btn-primary mx-2 bg-info rounded border-0 text-white" ><a href="https://${bookmarksList[i].url}"  target="_blank">Visit</a></button>
+        <button  class="btn-primary mx-2 bg-info rounded border-0 text-white" ><a href="www.${bookmarksList[i].url}"  target="_blank">Visit</a></button>
         </td>
         <td>
         <button  class="btn-primary mx-2 bg-danger rounded border-0 text-white" onclick="deleteBookmark(${i})">delete</button>
