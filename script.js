@@ -44,7 +44,7 @@ function deleteBookmark( ind){
     displayBookmarksList();
 }
 function openUrl(urlid){
-    window.open(bookmarksList[urlid].siteurl, "_blank");
+    window.open(bookmarksList[urlid].url, "_blank");
 }
 function alertClose(){
    document.getElementById('sitealert').style='display:non !important';
